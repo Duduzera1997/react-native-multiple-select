@@ -52,6 +52,7 @@ export interface MultiSelectProps {
     onClearSelector?: () => void;
     onToggleList?: () => void;
     removeSelected?: boolean;
+    autoFocus?: boolean;
 }
 
 export default class MultiSelect extends React.Component<MultiSelectProps> {

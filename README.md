@@ -169,6 +169,7 @@ The component takes 3 compulsory props - `items`, `uniqueKey` and `onSelectedIte
 | removeSelected | No  | (Boolean) Filter selected items from list to be shown in List |
 |noResultText | No      | (String) Text displayed when there is no item to display |
 | onDropdownToggle | No   | (Function) JavaScript function passed in as an argument. The function is called everythime the dropdown is opened/closed. Recive the dropdown status (`true` if opened, `false` if closed) in first argument. |
+| autoFocus | No  | (Boolean) Defaults to true. Toggles search input auto focus on dropdown list open. |
 
 
 ## Note
