@@ -38,11 +38,11 @@ import MultiSelect from 'react-native-multiple-select';
 
 class MultiSelectExample extends Component {
 
-  this.state = {
-    selectedItems = [];
+  state = {
+    selectedItems = []
   };
 
-  this.items = [{
+  items = [{
     id: '92iijs7yta',
     name: 'Ondo',
   }, {
@@ -81,7 +81,7 @@ class MultiSelectExample extends Component {
       <View style={{ flex: 1 }}>
         <MultiSelect
           hideTags
-          items={items}
+          items={this.items}
           uniqueKey="id"
           ref={(component) => { this.multiSelect = component }}
           onSelectedItemsChange={this.onSelectedItemsChange}
@@ -142,6 +142,7 @@ The component takes 3 compulsory props - `items`, `uniqueKey` and `onSelectedIte
 | searchInputPlaceholderText | No      | (String) Placeholder text displayed in multi-select filter input |
 | searchInputStyle | No   | (Object) Style object for multi-select input element  |
 | selectText | No     | (String) Text displayed in main component |
+| selectTextInfo | No     | (String) Added text displayed in main component when items are selected |
 | selectedItemFontFamily | No   | (String) Font family for each selected item in multi-select drop-down |
 | selectedItemIconColor | No     | (String) Color for `selected` check icon for each selected item in multi-select drop-down |
 | selectedItemTextColor | No   | (String) Text color for each selected item in multi-select drop-down |
@@ -166,7 +167,10 @@ The component takes 3 compulsory props - `items`, `uniqueKey` and `onSelectedIte
 | uniqueKey      | Yes      | (String) Unique identifier that is part of each item's properties. Used internally as means of identifying each item (Check sample below) |
 |selectedItems | No      | (Array, control prop) List of selected items keys . JavaScript Array of strings, that can be instantiated with the component |
 | removeSelected | No  | (Boolean) Filter selected items from list to be shown in List |
+|noResultText | No      | (String) Text displayed when there is no item to display |
+| onDropdownToggle | No   | (Function) JavaScript function passed in as an argument. The function is called everythime the dropdown is opened/closed. Recive the dropdown status (`true` if opened, `false` if closed) in first argument. |
 | autoFocus | No  | (Boolean) Defaults to true. Toggles search input auto focus on dropdown list open. |
+
 
 ## Note
 

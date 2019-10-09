@@ -49,6 +49,9 @@ export interface MultiSelectProps {
     textInputProps?: TextInputProps;
     flatListProps?: FlatListProps<any>;
     filterMethod?: string;
+    onClearSelector?: () => void;
+    onToggleList?: () => void;
+    removeSelected?: boolean;
     autoFocus?: boolean;
 }
 
