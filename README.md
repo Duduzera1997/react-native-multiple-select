@@ -168,6 +168,8 @@ The component takes 3 compulsory props - `items`, `uniqueKey` and `onSelectedIte
 |selectedItems | No      | (Array, control prop) List of selected items keys . JavaScript Array of strings, that can be instantiated with the component |
 | removeSelected | No  | (Boolean) Filter selected items from list to be shown in List |
 |noResultText | No      | (String) Text displayed when there is no item to display |
+| onDropdownToggle | No   | (Function) JavaScript function passed in as an argument. The function is called everythime the dropdown is opened/closed. Recive the dropdown status (`true` if opened, `false` if closed) in first argument. |
+
 
 ## Note
 
